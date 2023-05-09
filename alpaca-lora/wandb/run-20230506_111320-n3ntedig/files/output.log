@@ -1,0 +1,165 @@
+  0%|          | 0/144 [00:00<?, ?it/s]/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:318: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+
+  7%|▋         | 10/144 [45:24<8:50:13, 237.41s/it]
+
+
+
+
+
+
+
+
+
+ 13%|█▎        | 19/144 [1:26:46<9:07:39, 262.88s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 21%|██        | 30/144 [2:15:15<8:36:06, 271.64s/it]
+
+
+
+
+
+
+
+
+
+ 27%|██▋       | 39/144 [2:57:14<9:54:53, 339.94s/it]
+
+
+
+
+
+
+
+
+
+
+ 34%|███▍      | 49/144 [4:11:33<11:13:52, 425.60s/it]
+
+
+
+
+
+
+
+
+
+
+ 41%|████      | 59/144 [5:31:56<10:06:07, 427.86s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 49%|████▊     | 70/144 [6:58:04<8:40:10, 421.77s/it]
+
+
+
+
+
+
+
+
+
+
+ 56%|█████▌    | 80/144 [8:16:35<8:08:42, 458.17s/it]
+
+
+
+
+
+
+
+
+
+ 62%|██████▏   | 89/144 [9:23:29<7:41:55, 503.91s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 69%|██████▉   | 100/144 [10:45:56<6:09:29, 503.85s/it]
+
+
+
+
+
+
+
+
+
+ 76%|███████▌  | 109/144 [11:46:34<3:31:23, 362.38s/it]
+
+
+
+
+
+
+
+
+
+
+ 83%|████████▎ | 119/144 [13:03:00<2:47:31, 402.08s/it]
+
+
+
+
+
+
+
+
+
+
+ 90%|████████▉ | 129/144 [14:15:46<1:44:38, 418.54s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████▋| 140/144 [15:36:45<31:39, 474.77s/it]
+
+
+
+ 99%|█████████▉| 143/144 [15:56:07<06:53, 413.41s/it]
+{'train_runtime': 57741.3178, 'train_samples_per_second': 2.598, 'train_steps_per_second': 0.002, 'train_loss': 1.9481037656466167, 'epoch': 2.95}
+100%|██████████| 144/144 [16:02:16<00:00, 400.95s/it]
+ERROR: Could not consume arg:
+Usage: finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free '' '' --batch_size 1024 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 2e-5 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r
+For detailed information on this command, run:
+  finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free '' '' --batch_size 1024 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 2e-5 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r --help

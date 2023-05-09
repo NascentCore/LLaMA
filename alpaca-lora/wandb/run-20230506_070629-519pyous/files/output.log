@@ -1,0 +1,21 @@
+
+<wandb.sdk.wandb_run.Run object at 0x7f035e938400>
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'WANDB' is not defined
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'EXIT' is not defined
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'EXIT' is not defined
+  File "<stdin>", line 1
+    exit（）
+        ^
+SyntaxError: invalid character '（' (U+FF08)

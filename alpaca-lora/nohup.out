@@ -1,0 +1,66 @@
+/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/bitsandbytes/cuda_setup/main.py:145: UserWarning: /home/tricorder/yang/anaconda3/envs/llama_alpaca_lora did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda117.so
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.7/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 117
+CUDA SETUP: Loading binary /home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda117.so...
+Training Alpaca-LoRA model with params:
+base_model: /home/tricorder/test/gxc/decapoda-research/llama-7b-hf
+data_path: ../data/alpaca_data.json
+output_dir: ../lora_alpaca_output_free
+batch_size: 1024
+micro_batch_size: 4
+num_epochs: 3
+learning_rate: 2e-05
+cutoff_len: 512
+val_set_size: 2000
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj']
+train_on_inputs:  
+add_eos_token:  
+group_by_length: True
+wandb_project: llama_test_project
+wandb_run_name:  
+wandb_watch: gradients
+wandb_log_model:  
+resume_from_checkpoint:  
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/33 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/33 [00:00<00:11,  2.85it/s]Loading checkpoint shards:   6%|▌         | 2/33 [00:00<00:10,  2.93it/s]Loading checkpoint shards:   9%|▉         | 3/33 [00:01<00:10,  2.95it/s]Loading checkpoint shards:  12%|█▏        | 4/33 [00:01<00:09,  2.96it/s]Loading checkpoint shards:  15%|█▌        | 5/33 [00:01<00:09,  2.96it/s]Loading checkpoint shards:  18%|█▊        | 6/33 [00:02<00:09,  2.96it/s]Loading checkpoint shards:  21%|██        | 7/33 [00:02<00:08,  2.96it/s]Loading checkpoint shards:  24%|██▍       | 8/33 [00:02<00:08,  2.96it/s]Loading checkpoint shards:  27%|██▋       | 9/33 [00:03<00:08,  2.96it/s]Loading checkpoint shards:  30%|███       | 10/33 [00:03<00:07,  2.95it/s]Loading checkpoint shards:  33%|███▎      | 11/33 [00:03<00:07,  2.96it/s]Loading checkpoint shards:  36%|███▋      | 12/33 [00:04<00:07,  2.96it/s]Loading checkpoint shards:  39%|███▉      | 13/33 [00:04<00:06,  2.96it/s]Loading checkpoint shards:  42%|████▏     | 14/33 [00:04<00:06,  2.96it/s]Loading checkpoint shards:  45%|████▌     | 15/33 [00:05<00:06,  2.97it/s]Loading checkpoint shards:  48%|████▊     | 16/33 [00:05<00:05,  2.90it/s]Loading checkpoint shards:  52%|█████▏    | 17/33 [00:05<00:05,  2.92it/s]Loading checkpoint shards:  55%|█████▍    | 18/33 [00:06<00:05,  2.94it/s]Loading checkpoint shards:  58%|█████▊    | 19/33 [00:06<00:04,  2.92it/s]Loading checkpoint shards:  61%|██████    | 20/33 [00:06<00:04,  2.94it/s]Loading checkpoint shards:  64%|██████▎   | 21/33 [00:07<00:04,  2.95it/s]Loading checkpoint shards:  67%|██████▋   | 22/33 [00:07<00:03,  2.96it/s]Loading checkpoint shards:  70%|██████▉   | 23/33 [00:07<00:03,  2.96it/s]Loading checkpoint shards:  73%|███████▎  | 24/33 [00:08<00:03,  2.97it/s]Loading checkpoint shards:  76%|███████▌  | 25/33 [00:08<00:02,  2.96it/s]Loading checkpoint shards:  79%|███████▉  | 26/33 [00:08<00:02,  2.96it/s]Loading checkpoint shards:  82%|████████▏ | 27/33 [00:09<00:02,  2.96it/s]Loading checkpoint shards:  85%|████████▍ | 28/33 [00:09<00:01,  3.00it/s]Loading checkpoint shards:  88%|████████▊ | 29/33 [00:09<00:01,  3.03it/s]Loading checkpoint shards:  88%|████████▊ | 29/33 [00:09<00:01,  2.93it/s]
+Traceback (most recent call last):
+  File "/home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/finetune.py", line 283, in <module>
+    fire.Fire(train)
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/fire/core.py", line 475, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/fire/core.py", line 691, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/finetune.py", line 112, in train
+    model = LlamaForCausalLM.from_pretrained(
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2795, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3109, in _load_pretrained_model
+    state_dict = load_state_dict(shard_file)
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/transformers/modeling_utils.py", line 442, in load_state_dict
+    return torch.load(checkpoint_file, map_location="cpu")
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/torch/serialization.py", line 809, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/torch/serialization.py", line 1172, in _load
+    result = unpickler.load()
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/torch/serialization.py", line 1142, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/torch/serialization.py", line 1112, in load_tensor
+    storage = zip_file.get_storage_from_record(name, numel, torch.UntypedStorage)._typed_storage()._untyped_storage
+KeyboardInterrupt

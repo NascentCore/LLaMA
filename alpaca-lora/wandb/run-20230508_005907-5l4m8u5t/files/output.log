@@ -1,0 +1,50 @@
+  0%|          | 0/240 [00:00<?, ?it/s]/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:318: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+
+  4%|▍         | 10/240 [56:26<17:33:20, 274.79s/it]
+
+
+
+
+
+
+
+
+
+
+  8%|▊         | 20/240 [1:57:23<25:59:07, 425.22s/it]
+
+
+
+
+
+
+
+
+
+
+ 12%|█▎        | 30/240 [3:15:44<28:43:13, 492.35s/it]
+
+
+
+
+
+
+
+
+
+ 16%|█▋        | 39/240 [4:23:52<26:52:26, 481.32s/it]
+
+
+
+
+
+

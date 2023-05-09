@@ -1,0 +1,930 @@
+2023-05-06 06:53:59,243 INFO    StreamThr :1248051 [internal.py:wandb_internal():86] W&B internal server running at pid: 1248051, started at: 2023-05-06 06:53:59.242928
+2023-05-06 06:53:59,244 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status
+2023-05-06 06:53:59,246 INFO    WriterThread:1248051 [datastore.py:open_for_write():85] open: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/run-unm0kand.wandb
+2023-05-06 06:53:59,247 DEBUG   SenderThread:1248051 [sender.py:send():375] send: header
+2023-05-06 06:53:59,247 DEBUG   SenderThread:1248051 [sender.py:send():375] send: run
+2023-05-06 06:53:59,833 INFO    SenderThread:1248051 [dir_watcher.py:__init__():219] watching files in: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files
+2023-05-06 06:53:59,833 INFO    SenderThread:1248051 [sender.py:_start_run_threads():1124] run started: unm0kand with start time 1683356039.239405
+2023-05-06 06:53:59,833 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: summary_record
+2023-05-06 06:53:59,833 INFO    SenderThread:1248051 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-06 06:53:59,835 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: check_version
+2023-05-06 06:53:59,835 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: check_version
+2023-05-06 06:54:00,231 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: run_start
+2023-05-06 06:54:00,238 DEBUG   HandlerThread:1248051 [system_info.py:__init__():31] System info init
+2023-05-06 06:54:00,238 DEBUG   HandlerThread:1248051 [system_info.py:__init__():46] System info init done
+2023-05-06 06:54:00,238 INFO    HandlerThread:1248051 [system_monitor.py:start():181] Starting system monitor
+2023-05-06 06:54:00,238 INFO    SystemMonitor:1248051 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-06 06:54:00,238 INFO    HandlerThread:1248051 [system_monitor.py:probe():201] Collecting system info
+2023-05-06 06:54:00,238 INFO    SystemMonitor:1248051 [interfaces.py:start():190] Started cpu monitoring
+2023-05-06 06:54:00,239 INFO    SystemMonitor:1248051 [interfaces.py:start():190] Started disk monitoring
+2023-05-06 06:54:00,239 INFO    SystemMonitor:1248051 [interfaces.py:start():190] Started gpu monitoring
+2023-05-06 06:54:00,240 INFO    SystemMonitor:1248051 [interfaces.py:start():190] Started memory monitoring
+2023-05-06 06:54:00,241 INFO    SystemMonitor:1248051 [interfaces.py:start():190] Started network monitoring
+2023-05-06 06:54:00,282 DEBUG   HandlerThread:1248051 [system_info.py:probe():195] Probing system
+2023-05-06 06:54:00,284 DEBUG   HandlerThread:1248051 [system_info.py:_probe_git():180] Probing git
+2023-05-06 06:54:00,288 DEBUG   HandlerThread:1248051 [system_info.py:_probe_git():188] Probing git done
+2023-05-06 06:54:00,288 DEBUG   HandlerThread:1248051 [system_info.py:probe():240] Probing system done
+2023-05-06 06:54:00,288 DEBUG   HandlerThread:1248051 [system_monitor.py:probe():210] {'os': 'Linux-5.12.0-xrp-vhost-blk+-x86_64-with-glibc2.31', 'python': '3.10.11', 'heartbeatAt': '2023-05-06T06:54:00.282794', 'startedAt': '2023-05-06T06:53:59.235679', 'docker': None, 'cuda': None, 'args': ('--base_model', '/home/tricorder/test/gxc/decapoda-research/llama-7b-hf', '\xa0', '\xa0', '--data_path', '../data/alpaca_data.json', '\xa0', '\xa0', '--output_dir', '../lora_alpaca_output_free', '--batch_size', '128', '--micro_batch_size', '4', '--num_epochs', '3', '--learning_rate', '2e-5', '--cutoff_len', '512', '--val_set_size', '2000', '--lora_r', '8', '--lora_alpha', '16', '--lora_dropout', '0.05', '--lora_target_modules', '[q_proj,v_proj]', '--train_on_inputs', '--group_by_length', '--prompt_template_name', 'alpaca', '--wandb_project', 'llama_test_project', '--wandb_run_name', 'llama_test_run', '--wandb_watch', 'gradients', '--wandb_log_model', 'true'), 'state': 'running', 'program': '/home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/finetune.py', 'codePath': 'finetune.py', 'git': {'remote': 'https://github.com/tloen/alpaca-lora.git', 'commit': '8bb8579e403dc78e37fe81ffbb253c413007323f'}, 'email': None, 'root': '/home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora', 'host': 'powerleader', 'username': 'tricorder', 'executable': '/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 1132.2157875, 'min': 800.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 900.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 900.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2300.002, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2200.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}], 'disk': {'total': 100.40797424316406, 'used': 91.42151260375977}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A800 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 755.2617492675781}}
+2023-05-06 06:54:00,288 INFO    HandlerThread:1248051 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-06 06:54:00,288 INFO    HandlerThread:1248051 [system_monitor.py:probe():214] Publishing system info
+2023-05-06 06:54:00,288 DEBUG   HandlerThread:1248051 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-06 06:54:00,289 DEBUG   HandlerThread:1248051 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-06 06:54:00,289 DEBUG   HandlerThread:1248051 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-06 06:54:00,835 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/requirements.txt
+2023-05-06 06:54:00,835 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/conda-environment.yaml
+2023-05-06 06:54:00,835 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/wandb-summary.json
+2023-05-06 06:54:03,046 DEBUG   HandlerThread:1248051 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-06 06:54:03,048 INFO    HandlerThread:1248051 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-06 06:54:03,052 DEBUG   SenderThread:1248051 [sender.py:send():375] send: files
+2023-05-06 06:54:03,052 INFO    SenderThread:1248051 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-06 06:54:03,059 DEBUG   SenderThread:1248051 [sender.py:send():375] send: telemetry
+2023-05-06 06:54:03,060 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:54:03,061 DEBUG   SenderThread:1248051 [sender.py:send():375] send: config
+2023-05-06 06:54:03,063 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 06:54:03,063 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:54:03,427 DEBUG   SenderThread:1248051 [sender.py:send():375] send: telemetry
+2023-05-06 06:54:03,427 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 06:54:03,427 WARNING SenderThread:1248051 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-05-06 06:54:03,427 DEBUG   SenderThread:1248051 [sender.py:send():375] send: telemetry
+2023-05-06 06:54:03,837 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/conda-environment.yaml
+2023-05-06 06:54:03,837 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:54:03,838 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/wandb-metadata.json
+2023-05-06 06:54:03,915 INFO    wandb-upload_0:1248051 [upload_job.py:push():137] Uploaded file /tmp/tmprdrms24gwandb/p3td90h5-wandb-metadata.json
+2023-05-06 06:54:04,429 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:05,837 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:54:09,429 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:14,430 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:18,103 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:54:18,104 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:54:20,350 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:25,351 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:30,356 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:30,845 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/config.yaml
+2023-05-06 06:54:33,103 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:54:33,104 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:54:36,328 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:41,329 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:46,329 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:48,123 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:54:48,124 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:54:51,347 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:54:56,348 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:00,241 DEBUG   SystemMonitor:1248051 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-06 06:55:00,245 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:55:02,247 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:03,144 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:55:03,145 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:55:07,402 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:11,857 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:55:13,160 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:18,145 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:55:18,146 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:55:18,369 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:23,370 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:28,370 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:30,249 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:55:33,145 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:55:33,146 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:55:34,364 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:39,364 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:44,365 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:48,147 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:55:48,147 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:55:49,370 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:54,370 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:55:59,371 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:00,251 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:56:03,159 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:56:03,159 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:56:03,873 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:56:04,430 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:09,431 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:14,431 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:18,171 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:56:18,172 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:56:20,383 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:25,384 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:30,254 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:56:31,256 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:33,177 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:56:33,178 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:56:36,399 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:41,400 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:46,400 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:48,188 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:56:48,189 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:56:49,887 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:56:52,002 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:56:53,457 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,457 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,463 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,463 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,494 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,495 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,500 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,501 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,533 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,534 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,539 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,540 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,572 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,573 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,578 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,579 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,611 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,611 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,617 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,617 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,649 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,650 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,655 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,656 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,688 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,688 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,694 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,695 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,727 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,727 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,733 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,733 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,765 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,766 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,771 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,772 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,804 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,805 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,810 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,811 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,842 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,843 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,848 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,849 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,881 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,881 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,887 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,887 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,919 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,920 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,925 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,926 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,958 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,958 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,964 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,964 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,996 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:53,997 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,002 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,003 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,035 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,036 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,041 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,042 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,082 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,082 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,087 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,088 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,119 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,119 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,124 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,125 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,156 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,156 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,161 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,162 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,193 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,193 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,198 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,199 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,230 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,230 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,235 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,236 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,266 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,266 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,272 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,272 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,303 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,303 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,308 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,309 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,339 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,340 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,345 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,346 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,376 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,377 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,382 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,383 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,412 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,413 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,418 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,419 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,449 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,449 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,454 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,455 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,485 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,486 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,491 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,492 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,522 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,523 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,528 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,528 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,559 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,560 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,565 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,565 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,595 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,595 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,601 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,601 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,629 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,630 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,635 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:54,635 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:56:57,003 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:00,257 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:57:02,259 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:03,188 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:57:03,189 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:57:07,440 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:12,441 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:17,441 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:18,188 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:57:18,189 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:57:23,407 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:28,407 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:30,260 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:57:33,188 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:57:33,189 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:57:33,900 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:57:34,402 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:39,403 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:44,403 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:48,189 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:57:48,189 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:57:49,407 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:54,407 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:57:59,408 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:00,263 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:58:03,194 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:58:03,195 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:58:04,461 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:09,461 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:15,295 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:15,912 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:58:18,194 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:58:18,195 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:58:20,410 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:25,411 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:30,302 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:58:31,304 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:33,196 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:58:33,197 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:58:36,420 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:41,421 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:46,422 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:48,204 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:58:48,205 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:58:52,416 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:58:55,924 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:58:57,769 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:00,269 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:59:03,204 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:59:03,204 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:59:03,418 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:03,829 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,830 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,834 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,835 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,862 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,863 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,867 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,868 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,895 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,896 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,900 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,901 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,929 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,929 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,934 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,934 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,962 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,962 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,967 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,967 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,995 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:03,995 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,000 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,000 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,028 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,028 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,033 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,033 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,060 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,061 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,065 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,066 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,094 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,094 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,099 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,099 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,127 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,127 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,132 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,132 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,160 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,160 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,165 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,165 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,193 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,193 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,198 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,198 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,226 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,226 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,231 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,231 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,259 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,259 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,264 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,264 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,292 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,292 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,297 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,297 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,326 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,326 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,331 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,331 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,367 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,367 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,372 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,372 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,399 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,400 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,404 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,405 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,432 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,433 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,437 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,438 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,465 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,465 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,470 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,470 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,497 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,498 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,502 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,503 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,530 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,531 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,535 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,536 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,563 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,563 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,568 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,568 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,595 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,596 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,600 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,601 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,628 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,629 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,633 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,634 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,659 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,660 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,664 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,665 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,691 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,692 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,696 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,697 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,724 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,724 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,729 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,729 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,756 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,756 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,761 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,761 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,788 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,789 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,793 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,794 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,820 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,820 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,825 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,825 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,850 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,851 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,855 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:04,856 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-06 06:59:08,419 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:13,420 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:18,205 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:59:18,205 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:59:19,420 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:24,420 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:29,421 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:30,274 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 06:59:33,204 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:59:33,204 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:59:35,366 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:35,937 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 06:59:40,366 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:45,367 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:48,211 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 06:59:48,211 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 06:59:50,436 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 06:59:55,437 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:00:00,274 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 07:00:01,276 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:00:03,215 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:00:03,216 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:00:06,440 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:00:11,441 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:00:14,105 DEBUG   SenderThread:1248051 [sender.py:send():375] send: exit
+2023-05-06 07:00:14,106 INFO    SenderThread:1248051 [sender.py:send_exit():598] handling exit code: 255
+2023-05-06 07:00:14,106 INFO    SenderThread:1248051 [sender.py:send_exit():600] handling runtime: 373
+2023-05-06 07:00:14,107 INFO    SenderThread:1248051 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-06 07:00:14,107 INFO    SenderThread:1248051 [sender.py:send_exit():606] send defer
+2023-05-06 07:00:14,107 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:14,108 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-06 07:00:14,108 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:14,108 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-06 07:00:14,108 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 1
+2023-05-06 07:00:14,109 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:14,109 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-06 07:00:14,109 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:14,109 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-06 07:00:14,109 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 2
+2023-05-06 07:00:14,109 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:14,109 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-06 07:00:14,110 INFO    HandlerThread:1248051 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-06 07:00:14,110 DEBUG   SystemMonitor:1248051 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-06 07:00:14,111 INFO    HandlerThread:1248051 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-06 07:00:14,111 DEBUG   SystemMonitor:1248051 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-06 07:00:14,111 INFO    HandlerThread:1248051 [interfaces.py:finish():202] Joined disk monitor
+2023-05-06 07:00:14,285 INFO    HandlerThread:1248051 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-06 07:00:14,285 INFO    HandlerThread:1248051 [interfaces.py:finish():202] Joined memory monitor
+2023-05-06 07:00:14,286 INFO    HandlerThread:1248051 [interfaces.py:finish():202] Joined network monitor
+2023-05-06 07:00:14,286 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:14,287 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-06 07:00:14,287 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 3
+2023-05-06 07:00:14,287 DEBUG   SenderThread:1248051 [sender.py:send():375] send: stats
+2023-05-06 07:00:14,287 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:14,289 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-06 07:00:14,318 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,359 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,367 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,368 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,368 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,368 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,368 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,368 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,369 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,369 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,369 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,369 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,369 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,370 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,370 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,370 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,370 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,370 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,370 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,370 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,371 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,372 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,373 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,374 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,375 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,376 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,377 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,378 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,379 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,380 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,381 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,382 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,383 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,384 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,385 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,386 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,387 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,388 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,389 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,390 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,391 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,392 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,393 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,394 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,395 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,396 DEBUG   SenderThread:1248051 [sender.py:send():375] send: metric
+2023-05-06 07:00:14,419 DEBUG   SenderThread:1248051 [sender.py:send():375] send: history
+2023-05-06 07:00:14,438 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: summary_record
+2023-05-06 07:00:14,449 INFO    SenderThread:1248051 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-06 07:00:14,449 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:14,449 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-06 07:00:14,449 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 4
+2023-05-06 07:00:14,449 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:14,449 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-06 07:00:14,450 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:14,450 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-06 07:00:14,450 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 5
+2023-05-06 07:00:14,450 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:14,450 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-06 07:00:14,505 DEBUG   SenderThread:1248051 [sender.py:send():375] send: summary
+2023-05-06 07:00:14,524 INFO    SenderThread:1248051 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-06 07:00:14,524 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:14,524 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-06 07:00:14,524 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 6
+2023-05-06 07:00:14,524 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:14,525 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-06 07:00:14,525 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:14,525 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-06 07:00:14,529 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:00:14,949 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 07:00:14,949 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/wandb-summary.json
+2023-05-06 07:00:15,112 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-06 07:00:15,113 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 7
+2023-05-06 07:00:15,113 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: poll_exit
+2023-05-06 07:00:15,113 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:15,113 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-06 07:00:15,114 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:15,114 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-06 07:00:15,949 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/config.yaml
+2023-05-06 07:00:15,986 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 8
+2023-05-06 07:00:15,986 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:15,986 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-06 07:00:15,987 DEBUG   SenderThread:1248051 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:00:15,987 INFO    SenderThread:1248051 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-06 07:00:16,033 INFO    SenderThread:1248051 [sender.py:transition_state():626] send defer: 9
+2023-05-06 07:00:16,034 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:00:16,034 DEBUG   SenderThread:1248051 [sender.py:send():375] send: artifact
+2023-05-06 07:00:16,034 INFO    HandlerThread:1248051 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-06 07:00:16,113 DEBUG   HandlerThread:1248051 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-06 07:00:16,751 WARNING StreamThr :1248051 [internal.py:is_dead():414] Internal process exiting, parent pid 1247866 disappeared
+2023-05-06 07:00:16,752 ERROR   StreamThr :1248051 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-05-06 07:00:16,950 INFO    Thread-12 :1248051 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 07:00:17,113 INFO    HandlerThread:1248051 [handler.py:finish():845] shutting down handler
+2023-05-06 07:00:17,114 INFO    WriterThread:1248051 [datastore.py:close():298] close: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/run-unm0kand.wandb
+2023-05-06 07:00:17,428 INFO    wandb-upload_1:1248051 [upload_job.py:push():92] Skipped uploading /home/tricorder/.local/share/wandb/artifacts/staging/tmpk7ed9kly
+2023-05-06 07:00:18,476 INFO    wandb-upload_0:1248051 [upload_job.py:push():95] Uploaded file /home/tricorder/.local/share/wandb/artifacts/staging/tmpg_v8ofbt
+2023-05-06 07:00:29,419 INFO    SenderThread:1248051 [sender.py:send_artifact():1474] sent artifact job-https___github.com_tloen_alpaca-lora.git_finetune.py - {'id': 'QXJ0aWZhY3Q6NDQ0MDc3NzE1', 'digest': '131faf4a262a7bb50eefcb2fd711b7aa', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY3MDE1OTQx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDQ0MDY2NTM1', 'versionIndex': 0}}, 'version': 'latest'}
+2023-05-06 07:00:29,420 INFO    SenderThread:1248051 [sender.py:finish():1550] shutting down sender
+2023-05-06 07:00:29,420 INFO    SenderThread:1248051 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-06 07:00:29,952 INFO    SenderThread:1248051 [dir_watcher.py:finish():395] scan: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files
+2023-05-06 07:00:29,952 INFO    SenderThread:1248051 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log output.log
+2023-05-06 07:00:29,952 INFO    SenderThread:1248051 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/conda-environment.yaml conda-environment.yaml
+2023-05-06 07:00:29,953 INFO    SenderThread:1248051 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/wandb-summary.json wandb-summary.json
+2023-05-06 07:00:29,953 INFO    SenderThread:1248051 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/wandb-metadata.json wandb-metadata.json
+2023-05-06 07:00:29,958 INFO    SenderThread:1248051 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/requirements.txt requirements.txt
+2023-05-06 07:00:29,964 INFO    SenderThread:1248051 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/config.yaml config.yaml
+2023-05-06 07:00:29,970 INFO    SenderThread:1248051 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-06 07:00:29,975 INFO    SenderThread:1248051 [file_pusher.py:join():172] waiting for file pusher
+2023-05-06 07:00:30,905 INFO    wandb-upload_1:1248051 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/output.log
+2023-05-06 07:00:30,949 INFO    wandb-upload_0:1248051 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/conda-environment.yaml
+2023-05-06 07:00:31,116 INFO    wandb-upload_3:1248051 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/requirements.txt
+2023-05-06 07:00:31,277 INFO    wandb-upload_4:1248051 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/config.yaml
+2023-05-06 07:00:31,449 INFO    wandb-upload_2:1248051 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_065359-unm0kand/files/wandb-summary.json

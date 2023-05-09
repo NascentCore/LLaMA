@@ -1,0 +1,202 @@
+2023-05-06 07:41:47,489 INFO    StreamThr :1249573 [internal.py:wandb_internal():86] W&B internal server running at pid: 1249573, started at: 2023-05-06 07:41:47.489112
+2023-05-06 07:41:47,490 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status
+2023-05-06 07:41:47,492 INFO    WriterThread:1249573 [datastore.py:open_for_write():85] open: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/run-6i7qnqsi.wandb
+2023-05-06 07:41:47,492 DEBUG   SenderThread:1249573 [sender.py:send():375] send: header
+2023-05-06 07:41:47,495 DEBUG   SenderThread:1249573 [sender.py:send():375] send: run
+2023-05-06 07:41:48,084 INFO    SenderThread:1249573 [dir_watcher.py:__init__():219] watching files in: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files
+2023-05-06 07:41:48,084 INFO    SenderThread:1249573 [sender.py:_start_run_threads():1124] run started: 6i7qnqsi with start time 1683358907.488812
+2023-05-06 07:41:48,084 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: summary_record
+2023-05-06 07:41:48,084 INFO    SenderThread:1249573 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-06 07:41:48,089 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: check_version
+2023-05-06 07:41:48,089 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: check_version
+2023-05-06 07:41:48,495 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: run_start
+2023-05-06 07:41:48,502 DEBUG   HandlerThread:1249573 [system_info.py:__init__():31] System info init
+2023-05-06 07:41:48,502 DEBUG   HandlerThread:1249573 [system_info.py:__init__():46] System info init done
+2023-05-06 07:41:48,502 INFO    HandlerThread:1249573 [system_monitor.py:start():181] Starting system monitor
+2023-05-06 07:41:48,502 INFO    SystemMonitor:1249573 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-06 07:41:48,502 INFO    HandlerThread:1249573 [system_monitor.py:probe():201] Collecting system info
+2023-05-06 07:41:48,502 INFO    SystemMonitor:1249573 [interfaces.py:start():190] Started cpu monitoring
+2023-05-06 07:41:48,503 INFO    SystemMonitor:1249573 [interfaces.py:start():190] Started disk monitoring
+2023-05-06 07:41:48,503 INFO    SystemMonitor:1249573 [interfaces.py:start():190] Started gpu monitoring
+2023-05-06 07:41:48,504 INFO    SystemMonitor:1249573 [interfaces.py:start():190] Started memory monitoring
+2023-05-06 07:41:48,504 INFO    SystemMonitor:1249573 [interfaces.py:start():190] Started network monitoring
+2023-05-06 07:41:48,546 DEBUG   HandlerThread:1249573 [system_info.py:probe():195] Probing system
+2023-05-06 07:41:48,548 DEBUG   HandlerThread:1249573 [system_info.py:_probe_git():180] Probing git
+2023-05-06 07:41:48,552 DEBUG   HandlerThread:1249573 [system_info.py:_probe_git():188] Probing git done
+2023-05-06 07:41:48,552 DEBUG   HandlerThread:1249573 [system_info.py:probe():240] Probing system done
+2023-05-06 07:41:48,552 DEBUG   HandlerThread:1249573 [system_monitor.py:probe():210] {'os': 'Linux-5.12.0-xrp-vhost-blk+-x86_64-with-glibc2.31', 'python': '3.10.11', 'heartbeatAt': '2023-05-06T07:41:48.546795', 'startedAt': '2023-05-06T07:41:47.478780', 'docker': None, 'cuda': None, 'args': ('\xa0', '\xa0', '--base_model', '/home/tricorder/test/gxc/decapoda-research/llama-7b-hf', '\xa0', '\xa0', '--data_path', '../data/alpaca_data.json', '\xa0', '\xa0', '--output_dir', '../lora_alpaca_output_free', '\xa0', '\xa0', '--batch_size', '1024', '\xa0', '\xa0', '--micro_batch_size', '4', '\xa0', '\xa0', '--num_epochs', '3', '\xa0', '\xa0', '--learning_rate', '2e-5', '\xa0', '\xa0', '--cutoff_len', '512', '\xa0', '\xa0', '--val_set_size', '2000', '\xa0', '\xa0', '--lora_r', '8', '\xa0', '\xa0', '--lora_alpha', '16', '\xa0', '\xa0', '--lora_dropout', '0.05', '\xa0', '\xa0', '--lora_target_modules', '[q_proj,v_proj]', '--train_on_inputs', '\xa0', '\xa0', '--group_by_length', '--prompt_template_name', 'alpaca', '--wandb_project', 'llama_test_project', '--wandb_run_name\xa0', 'llama_test_run', '--wandb_watch', 'all', '--wandb_log_model\xa0', 'true'), 'state': 'running', 'program': '/home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/finetune.py', 'codePath': 'finetune.py', 'git': {'remote': 'https://github.com/tloen/alpaca-lora.git', 'commit': '8bb8579e403dc78e37fe81ffbb253c413007323f'}, 'email': None, 'root': '/home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora', 'host': 'powerleader', 'username': 'tricorder', 'executable': '/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 1101.9549875, 'min': 800.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 900.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2300.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 1000.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2200.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 2301.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}, {'current': 800.0, 'min': 800.0, 'max': 2301.0}], 'disk': {'total': 100.40797424316406, 'used': 91.42202377319336}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A800 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 755.2617492675781}}
+2023-05-06 07:41:48,552 INFO    HandlerThread:1249573 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-06 07:41:48,552 INFO    HandlerThread:1249573 [system_monitor.py:probe():214] Publishing system info
+2023-05-06 07:41:48,552 DEBUG   HandlerThread:1249573 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-06 07:41:48,552 DEBUG   HandlerThread:1249573 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-06 07:41:48,552 DEBUG   HandlerThread:1249573 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-06 07:41:49,088 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/conda-environment.yaml
+2023-05-06 07:41:49,088 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/wandb-summary.json
+2023-05-06 07:41:49,088 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/requirements.txt
+2023-05-06 07:41:51,284 DEBUG   HandlerThread:1249573 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-06 07:41:51,285 INFO    HandlerThread:1249573 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-06 07:41:51,287 DEBUG   SenderThread:1249573 [sender.py:send():375] send: files
+2023-05-06 07:41:51,287 INFO    SenderThread:1249573 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-06 07:41:51,299 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:41:51,299 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:41:51,600 DEBUG   SenderThread:1249573 [sender.py:send():375] send: telemetry
+2023-05-06 07:41:51,601 DEBUG   SenderThread:1249573 [sender.py:send():375] send: config
+2023-05-06 07:41:51,602 DEBUG   SenderThread:1249573 [sender.py:send():375] send: metric
+2023-05-06 07:41:51,603 DEBUG   SenderThread:1249573 [sender.py:send():375] send: telemetry
+2023-05-06 07:41:51,603 DEBUG   SenderThread:1249573 [sender.py:send():375] send: metric
+2023-05-06 07:41:51,603 WARNING SenderThread:1249573 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-05-06 07:41:51,603 DEBUG   SenderThread:1249573 [sender.py:send():375] send: telemetry
+2023-05-06 07:41:52,087 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/conda-environment.yaml
+2023-05-06 07:41:52,088 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/output.log
+2023-05-06 07:41:52,088 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_created():278] file/dir created: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/wandb-metadata.json
+2023-05-06 07:41:52,285 INFO    wandb-upload_0:1249573 [upload_job.py:push():137] Uploaded file /tmp/tmp2skb0sqnwandb/x57qxldb-wandb-metadata.json
+2023-05-06 07:41:52,604 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:41:54,088 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/output.log
+2023-05-06 07:41:57,605 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:02,606 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:06,323 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:42:06,323 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:42:08,554 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:13,555 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:18,560 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:19,096 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/config.yaml
+2023-05-06 07:42:21,338 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:42:21,339 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:42:24,561 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:29,562 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:34,562 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:36,369 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:42:36,370 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:42:39,594 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:44,595 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:48,504 DEBUG   SystemMonitor:1249573 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-06 07:42:48,508 DEBUG   SenderThread:1249573 [sender.py:send():375] send: stats
+2023-05-06 07:42:50,510 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:42:51,389 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:42:51,389 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:42:55,610 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:00,610 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:05,611 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:06,407 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:43:06,407 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:43:10,640 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:15,642 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:18,512 DEBUG   SenderThread:1249573 [sender.py:send():375] send: stats
+2023-05-06 07:43:21,430 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:21,431 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:43:21,432 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:43:26,657 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:31,658 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:36,429 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:43:36,430 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:43:37,643 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:42,644 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:47,645 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:48,514 DEBUG   SenderThread:1249573 [sender.py:send():375] send: stats
+2023-05-06 07:43:51,460 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:43:51,460 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:43:52,682 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:43:57,683 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:02,683 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:06,488 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:44:06,488 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:44:07,715 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:12,715 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:17,716 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:18,517 DEBUG   SenderThread:1249573 [sender.py:send():375] send: stats
+2023-05-06 07:44:21,493 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-06 07:44:21,494 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: stop_status
+2023-05-06 07:44:23,713 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:28,715 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:33,712 DEBUG   SenderThread:1249573 [sender.py:send():375] send: exit
+2023-05-06 07:44:33,713 INFO    SenderThread:1249573 [sender.py:send_exit():598] handling exit code: 255
+2023-05-06 07:44:33,713 INFO    SenderThread:1249573 [sender.py:send_exit():600] handling runtime: 165
+2023-05-06 07:44:33,716 INFO    SenderThread:1249573 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-06 07:44:33,716 INFO    SenderThread:1249573 [sender.py:send_exit():606] send defer
+2023-05-06 07:44:33,717 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,717 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-06 07:44:33,717 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:33,718 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,718 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-06 07:44:33,718 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 1
+2023-05-06 07:44:33,718 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,718 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-06 07:44:33,719 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,719 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-06 07:44:33,719 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 2
+2023-05-06 07:44:33,719 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,719 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-06 07:44:33,719 INFO    HandlerThread:1249573 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-06 07:44:33,719 DEBUG   SystemMonitor:1249573 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-06 07:44:33,720 DEBUG   SystemMonitor:1249573 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-06 07:44:33,721 INFO    HandlerThread:1249573 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-06 07:44:33,724 INFO    HandlerThread:1249573 [interfaces.py:finish():202] Joined disk monitor
+2023-05-06 07:44:33,932 INFO    HandlerThread:1249573 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-06 07:44:33,932 INFO    HandlerThread:1249573 [interfaces.py:finish():202] Joined memory monitor
+2023-05-06 07:44:33,933 INFO    HandlerThread:1249573 [interfaces.py:finish():202] Joined network monitor
+2023-05-06 07:44:33,933 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,933 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-06 07:44:33,933 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 3
+2023-05-06 07:44:33,933 DEBUG   SenderThread:1249573 [sender.py:send():375] send: stats
+2023-05-06 07:44:33,934 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,935 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-06 07:44:33,935 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,935 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-06 07:44:33,936 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 4
+2023-05-06 07:44:33,936 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,936 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-06 07:44:33,936 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,936 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-06 07:44:33,936 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 5
+2023-05-06 07:44:33,936 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,937 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-06 07:44:33,937 DEBUG   SenderThread:1249573 [sender.py:send():375] send: summary
+2023-05-06 07:44:33,937 INFO    SenderThread:1249573 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-06 07:44:33,938 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,938 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-06 07:44:33,938 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 6
+2023-05-06 07:44:33,938 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,938 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-06 07:44:33,938 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,939 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-06 07:44:33,939 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 7
+2023-05-06 07:44:33,939 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: status_report
+2023-05-06 07:44:33,939 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:33,939 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-06 07:44:33,939 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:33,940 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-06 07:44:34,141 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/wandb-summary.json
+2023-05-06 07:44:34,141 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/output.log
+2023-05-06 07:44:34,713 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-06 07:44:35,825 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 8
+2023-05-06 07:44:35,825 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: poll_exit
+2023-05-06 07:44:35,825 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:35,826 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-06 07:44:35,826 DEBUG   SenderThread:1249573 [sender.py:send_request():402] send_request: defer
+2023-05-06 07:44:35,827 INFO    SenderThread:1249573 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-06 07:44:35,838 INFO    SenderThread:1249573 [sender.py:transition_state():626] send defer: 9
+2023-05-06 07:44:35,839 DEBUG   HandlerThread:1249573 [handler.py:handle_request():144] handle_request: defer
+2023-05-06 07:44:35,839 DEBUG   SenderThread:1249573 [sender.py:send():375] send: artifact
+2023-05-06 07:44:35,839 INFO    HandlerThread:1249573 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-06 07:44:36,141 INFO    Thread-12 :1249573 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/output.log
+2023-05-06 07:44:36,665 WARNING StreamThr :1249573 [internal.py:is_dead():414] Internal process exiting, parent pid 1249389 disappeared
+2023-05-06 07:44:36,665 ERROR   StreamThr :1249573 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-05-06 07:44:36,841 INFO    HandlerThread:1249573 [handler.py:finish():845] shutting down handler
+2023-05-06 07:44:36,841 INFO    WriterThread:1249573 [datastore.py:close():298] close: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/run-6i7qnqsi.wandb
+2023-05-06 07:44:37,064 INFO    SenderThread:1249573 [sender.py:send_artifact():1474] sent artifact job-https___github.com_tloen_alpaca-lora.git_finetune.py - {'id': 'QXJ0aWZhY3Q6NDQ0MDgyMzUx', 'digest': 'b34f92a89ca201cd1e9368d2bc63510a', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_tloen_alpaca-lora.git_finetune.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_tloen_alpaca-lora.git_finetune.py', 'alias': 'v2'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY3MDE1OTQx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDQ0MDgyMzUx', 'versionIndex': 2}}, 'version': 'v2'}
+2023-05-06 07:44:37,064 INFO    SenderThread:1249573 [sender.py:finish():1550] shutting down sender
+2023-05-06 07:44:37,064 INFO    SenderThread:1249573 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-06 07:44:37,143 INFO    SenderThread:1249573 [dir_watcher.py:finish():395] scan: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files
+2023-05-06 07:44:37,143 INFO    SenderThread:1249573 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/output.log output.log
+2023-05-06 07:44:37,143 INFO    SenderThread:1249573 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/conda-environment.yaml conda-environment.yaml
+2023-05-06 07:44:37,144 INFO    SenderThread:1249573 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/wandb-summary.json wandb-summary.json
+2023-05-06 07:44:37,149 INFO    SenderThread:1249573 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/wandb-metadata.json wandb-metadata.json
+2023-05-06 07:44:37,155 INFO    SenderThread:1249573 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/requirements.txt requirements.txt
+2023-05-06 07:44:37,162 INFO    SenderThread:1249573 [dir_watcher.py:finish():409] scan save: /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/config.yaml config.yaml
+2023-05-06 07:44:37,162 INFO    SenderThread:1249573 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-06 07:44:37,162 INFO    SenderThread:1249573 [file_pusher.py:join():172] waiting for file pusher
+2023-05-06 07:44:37,830 INFO    wandb-upload_0:1249573 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/conda-environment.yaml
+2023-05-06 07:44:38,014 INFO    wandb-upload_1:1249573 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/output.log
+2023-05-06 07:44:38,101 INFO    wandb-upload_2:1249573 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/wandb-summary.json
+2023-05-06 07:44:38,122 INFO    wandb-upload_3:1249573 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/requirements.txt
+2023-05-06 07:44:38,137 INFO    wandb-upload_4:1249573 [upload_job.py:push():137] Uploaded file /home/tricorder/test/gxc/alpaca_lora_env/alpaca-lora/wandb/run-20230506_074147-6i7qnqsi/files/config.yaml

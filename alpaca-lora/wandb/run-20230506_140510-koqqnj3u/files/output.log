@@ -1,0 +1,86 @@
+  0%|          | 0/72 [00:00<?, ?it/s]/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:318: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+
+ 14%|█▍        | 10/72 [2:38:20<15:48:32, 917.95s/it]
+
+
+
+
+
+
+
+
+
+
+ 28%|██▊       | 20/72 [5:12:56<13:57:20, 966.16s/it]
+
+
+
+
+
+
+
+
+
+
+ 42%|████▏     | 30/72 [7:35:56<9:48:16, 840.40s/it]
+
+
+
+
+
+
+
+
+
+
+ 56%|█████▌    | 40/72 [10:05:25<7:45:10, 872.21s/it]
+
+
+
+
+
+
+
+
+
+ 68%|██████▊   | 49/72 [12:09:13<5:23:30, 843.95s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 83%|████████▎ | 60/72 [14:09:59<1:44:10, 520.91s/it]
+
+
+
+
+
+
+
+
+
+ 96%|█████████▌| 69/72 [15:30:11<27:11, 543.89s/it]
+
+
+100%|██████████| 72/72 [15:53:12<00:00, 794.34s/it]
+ERROR: Could not consume arg:
+Usage: finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free '' '' --batch_size 2048 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 1e-2 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r
+For detailed information on this command, run:
+  finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free '' '' --batch_size 2048 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 1e-2 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r --help
+{'train_runtime': 57197.6166, 'train_samples_per_second': 2.623, 'train_steps_per_second': 0.001, 'train_loss': 2.2848224772347345, 'epoch': 2.95}
+ If there's a warning about missing keys above, please disregard :)

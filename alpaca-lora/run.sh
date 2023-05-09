@@ -1,0 +1,22 @@
+nohup python finetune.py \
+    --base_model '/home/tricorder/test/gxc/decapoda-research/llama-7b-hf' \
+    --data_path '../data/alpaca_data.json' \
+    --output_dir '../lora_alpaca_output_free/source_2048' \
+    --batch_size 2048 \
+    --micro_batch_size 4 \
+    --num_epochs 3 \
+    --learning_rate 2e-5 \
+    --cutoff_len 512 \
+    --val_set_size 2000 \
+    --lora_r 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0.05 \
+    --lora_target_modules '[q_proj,v_proj]' \
+	--train_on_inputs \
+    --group_by_length \
+	--prompt_template_name 'alpaca' \
+	--wandb_project 'llama_test_project' \
+	--wandb_run_name  'llama_test_run' \
+	--wandb_watch 'gradients' \
+	--wandb_log_model  'true' \
+> ./output_log/result_20230508_2048.out 2>&1 &
