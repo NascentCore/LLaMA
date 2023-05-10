@@ -58,3 +58,29 @@
 
 
 
+
+
+
+
+
+ 82%|████████▏ | 59/72 [25:02:36<4:21:09, 1205.34s/it]
+
+
+
+
+
+
+
+
+
+
+ 96%|█████████▌| 69/72 [28:35:24<1:03:03, 1261.01s/it]
+
+
+ 99%|█████████▊| 71/72 [29:18:52<21:23, 1283.31s/it]
+{'train_runtime': 106727.3492, 'train_samples_per_second': 1.406, 'train_steps_per_second': 0.001, 'train_loss': 2.3480590184529624, 'epoch': 2.95}
+100%|██████████| 72/72 [29:38:42<00:00, 1482.25s/it]
+ERROR: Could not consume arg:
+Usage: finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free/source_2048 '' '' --batch_size 2048 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 2e-5 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r
+For detailed information on this command, run:
+  finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free/source_2048 '' '' --batch_size 2048 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 2e-5 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r --help
