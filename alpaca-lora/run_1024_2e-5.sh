@@ -4,7 +4,7 @@ nohup python finetune.py \
     --output_dir '../lora_alpaca_output_free/source_2048' \
     --batch_size 1024 \
     --micro_batch_size 4 \
-    --num_epochs 5 \
+    --num_epochs 3 \
     --learning_rate 2e-5 \
     --cutoff_len 512 \
     --val_set_size 2000 \

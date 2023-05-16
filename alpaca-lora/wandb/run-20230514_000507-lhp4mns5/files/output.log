@@ -1,0 +1,165 @@
+  0%|          | 0/144 [00:00<?, ?it/s]/home/tricorder/yang/anaconda3/envs/llama_alpaca_lora/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:318: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+
+
+
+
+
+
+
+
+
+  7%|▋         | 10/144 [1:21:15<16:20:12, 438.90s/it]
+
+
+
+
+
+
+
+
+
+ 13%|█▎        | 19/144 [2:34:51<16:30:22, 475.38s/it]
+
+
+
+
+
+
+
+
+
+
+ 20%|██        | 29/144 [3:34:57<12:06:15, 378.92s/it]
+
+
+
+
+
+
+
+
+
+
+ 27%|██▋       | 39/144 [4:31:07<10:06:36, 346.64s/it]
+
+
+
+
+
+
+
+
+
+
+ 34%|███▍      | 49/144 [5:14:05<6:56:43, 263.19s/it]
+
+
+
+
+
+
+
+
+
+
+ 41%|████      | 59/144 [6:03:23<6:38:24, 281.23s/it]
+
+
+
+
+
+
+
+
+
+
+ 48%|████▊     | 69/144 [6:56:29<6:43:02, 322.43s/it]
+
+
+
+
+
+
+
+
+
+
+ 55%|█████▍    | 79/144 [8:03:38<7:16:00, 402.48s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 62%|██████▎   | 90/144 [8:57:40<4:27:35, 297.33s/it]
+
+
+
+
+
+
+
+
+
+
+ 69%|██████▉   | 100/144 [9:43:38<3:44:44, 306.46s/it]
+
+
+
+
+
+
+
+
+
+
+ 76%|███████▋  | 110/144 [10:26:53<2:27:16, 259.89s/it]
+
+
+
+
+
+
+
+
+
+
+ 83%|████████▎ | 120/144 [11:12:59<1:39:44, 249.35s/it]
+
+
+
+
+
+
+
+
+
+
+ 90%|█████████ | 130/144 [12:00:33<1:01:38, 264.19s/it]
+
+
+
+
+
+
+
+
+
+
+ 97%|█████████▋| 140/144 [12:46:56<18:39, 279.76s/it]
+
+
+
+100%|██████████| 144/144 [13:02:48<00:00, 326.17s/it]
+ERROR: Could not consume arg:
+Usage: finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free/source_2048 '' '' --batch_size 1024 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 2e-5 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r
+For detailed information on this command, run:
+  finetune.py '' '' --base_model /home/tricorder/test/gxc/decapoda-research/llama-7b-hf '' '' --data_path ../data/alpaca_data.json '' '' --output_dir ../lora_alpaca_output_free/source_2048 '' '' --batch_size 1024 '' '' --micro_batch_size 4 '' '' --num_epochs 3 '' '' --learning_rate 2e-5 '' '' --cutoff_len 512 '' '' --val_set_size 2000 '' '' --lora_r --help
+{'train_runtime': 46975.5709, 'train_samples_per_second': 3.193, 'train_steps_per_second': 0.003, 'train_loss': 1.9405356844266255, 'epoch': 2.95}
+ If there's a warning about missing keys above, please disregard :)
