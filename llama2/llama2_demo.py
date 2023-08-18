@@ -1,17 +1,25 @@
 import torch.nn as nn
 from transformers import LlamaForCausalLM, LlamaTokenizer,  LlamaConfig
+import argparse
 
-model_path="./Llama2-Chinese-7b-Chat/"
-config = LlamaConfig.from_pretrained("./Llama2-Chinese-7b-Chat/config.json")
-tokenizer = LlamaTokenizer.from_pretrained(model_path)
+
+parse=argparse.ArgumentParser()
+
+parse.add_argument("--model_path",type=str, default="./Llama2-Chinese-7b-Chat/", help="model path")
+parse.add_argument("--config_path",type=str, default="./Llama2-Chinese-7b-Chat/config.json", help="model config path")
+parse.add_argument("--ds_config",type=str, default="./config/dp_zero3_config.json", help="deepspeed config json")
+
+args = parser.parse_args()
+
+
+config = LlamaConfig.from_pretrained(args.config_path)
+tokenizer = LlamaTokenizer.from_pretrained(args.model_path)
 model = LlamaForCausalLM(config)
 print(model)
 
 from transformers import DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
 from transformers import LineByLineTextDataset
-train_file = "wikitext-103-raw/wiki.train.raw"
-eval_file = "wikitext-103-raw/wiki.valid.raw"
 max_seq_length = 512
 out_model_path = "llama2_output"
 train_epoches = 10
@@ -19,21 +27,17 @@ batch_size = 1
 
 tokenizer.pad_token = tokenizer.eos_token
 
-dataset = LineByLineTextDataset(
-    tokenizer=tokenizer,
-    file_path=train_file,
-    block_size=max_seq_length,
-)
+
+#train_file = "wikitext-103-raw/wiki.train.raw"
+#eval_file = "wikitext-103-raw/wiki.valid.raw"
+#train_dataset = LineByLineTextDataset(tokenizer=tokenizer,file_path=train_file,block_size=max_seq_length)
+#eval_dataset = LineByLineTextDataset(tokenizer=tokenizer,file_path=eval_file,block_size=max_seq_length)
+
+train_dataset = torch.load('data/train_dataset.pt')
+eval_dataset = torch.load('data/eval_dataset.pt')
 
 data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False) #这里bert不一样
-eval_dataset = LineByLineTextDataset(
-    tokenizer=tokenizer,
-    file_path=eval_file,
-    block_size=max_seq_length,
-)
 
-
-deepspeed_config="./config/dp_zero3_config.json"
 training_args = TrainingArguments(
         output_dir=out_model_path,
         overwrite_output_dir=True,
@@ -43,7 +47,7 @@ training_args = TrainingArguments(
         save_total_limit=2,
         prediction_loss_only=True,
         report_to="none",
-        deepspeed =deepspeed_config
+        deepspeed =args.ds_config
     )
 
 #model = nn.DataParallel(model)
@@ -53,7 +57,7 @@ training_args = TrainingArguments(
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=dataset,
+    train_dataset=train_dataset,
     eval_dataset=eval_dataset,
     data_collator=data_collator,
 )
